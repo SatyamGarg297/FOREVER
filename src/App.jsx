@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import About from "./pages/About";
 import Cart from "./pages/Cart";
 import Collection from "./pages/Collection";
@@ -33,6 +34,7 @@ const App = () => {
         <Route path="/orders" element={<Orders />} />
       </Routes>
       <Footer/>
+      <Analytics />
     </div>
   );
 };
